@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A586984F-3B45-4ECD-A50C-6BBB2DD1B91A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{5D5969B7-E1E9-4D03-A773-091BA70EB38C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Api", "src\Services\BookStore.Api\BookStore.Api.csproj", "{81F3AF4C-1FAC-42ED-8021-FC98E8EBEA79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Application", "src\Services\BookStore.Application\BookStore.Application.csproj", "{19031B0C-4632-4DBA-8069-873E931FB3BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Domain", "src\Services\BookStore.Domain\BookStore.Domain.csproj", "{F3CE32A2-8AD0-4D5A-9E5A-9E30D80D736F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Infrastructure", "src\Services\BookStore.Infrastructure\BookStore.Infrastructure.csproj", "{346773E4-9613-4973-B537-0116FA8BA2A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B3A76256-3E33-4822-9C58-C361FAFEA8A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{679B6998-C903-45CB-B37B-AC4F162327B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.UnitTests", "tests\UnitTests\BookStore.UnitTests\BookStore.UnitTests.csproj", "{15844CA6-C9CC-4000-B4B7-91D36CE0444D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81F3AF4C-1FAC-42ED-8021-FC98E8EBEA79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F3AF4C-1FAC-42ED-8021-FC98E8EBEA79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F3AF4C-1FAC-42ED-8021-FC98E8EBEA79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F3AF4C-1FAC-42ED-8021-FC98E8EBEA79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19031B0C-4632-4DBA-8069-873E931FB3BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19031B0C-4632-4DBA-8069-873E931FB3BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19031B0C-4632-4DBA-8069-873E931FB3BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19031B0C-4632-4DBA-8069-873E931FB3BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3CE32A2-8AD0-4D5A-9E5A-9E30D80D736F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3CE32A2-8AD0-4D5A-9E5A-9E30D80D736F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3CE32A2-8AD0-4D5A-9E5A-9E30D80D736F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3CE32A2-8AD0-4D5A-9E5A-9E30D80D736F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{346773E4-9613-4973-B537-0116FA8BA2A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{346773E4-9613-4973-B537-0116FA8BA2A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{346773E4-9613-4973-B537-0116FA8BA2A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{346773E4-9613-4973-B537-0116FA8BA2A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15844CA6-C9CC-4000-B4B7-91D36CE0444D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15844CA6-C9CC-4000-B4B7-91D36CE0444D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15844CA6-C9CC-4000-B4B7-91D36CE0444D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15844CA6-C9CC-4000-B4B7-91D36CE0444D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5D5969B7-E1E9-4D03-A773-091BA70EB38C} = {A586984F-3B45-4ECD-A50C-6BBB2DD1B91A}
+		{81F3AF4C-1FAC-42ED-8021-FC98E8EBEA79} = {5D5969B7-E1E9-4D03-A773-091BA70EB38C}
+		{19031B0C-4632-4DBA-8069-873E931FB3BE} = {5D5969B7-E1E9-4D03-A773-091BA70EB38C}
+		{F3CE32A2-8AD0-4D5A-9E5A-9E30D80D736F} = {5D5969B7-E1E9-4D03-A773-091BA70EB38C}
+		{346773E4-9613-4973-B537-0116FA8BA2A0} = {5D5969B7-E1E9-4D03-A773-091BA70EB38C}
+		{679B6998-C903-45CB-B37B-AC4F162327B3} = {B3A76256-3E33-4822-9C58-C361FAFEA8A8}
+		{15844CA6-C9CC-4000-B4B7-91D36CE0444D} = {679B6998-C903-45CB-B37B-AC4F162327B3}
+	EndGlobalSection
+EndGlobal
