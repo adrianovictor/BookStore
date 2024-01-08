@@ -1,1 +1,33 @@
-version: "3.1"
+version: '3.7'
+
+services:
+
+  db:
+    container_name: bookstore
+    image: 'postgres:latest'
+    deploy:
+      resources:
+        limits:
+          cpus: '0.4'
+          memory: '1.4GB'
+    ports:
+       - 5432:5432
+    environment:
+       POSTGRES_USER: bookstore
+       POSTGRES_PASSWORD: 7653e869faa3 
+       POSTGRES_DB: BookStore
+    # volumes:
+    #   - ./create-script.sql:/docker-entrypoint-initdb.d/create-script.sql
+    command: |
+          postgres -c 'max_connections=1000' 
+                   -c 'shared_buffers=800MB'
+                   -c 'effective_io_concurrency=2'
+                   -c 'autovacuum=off'
+    networks:
+      - dockernet
+
+
+networks:
+  dockernet:
+    name: dockernet
+    driver: bridge
