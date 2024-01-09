@@ -5,11 +5,11 @@ services:
   db:
     container_name: bookstore
     image: 'postgres:latest'
-    deploy:
-      resources:
-        limits:
-          cpus: '0.4'
-          memory: '1.4GB'
+    #deploy:
+    #  resources:
+    #    limits:
+    #      cpus: '0.4'
+    #      memory: '1.4GB'
     ports:
        - 5432:5432
     environment:
@@ -25,8 +25,7 @@ services:
                    -c 'autovacuum=off'
     networks:
       - dockernet
-
-
+ 
 networks:
   dockernet:
     name: dockernet
