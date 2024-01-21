@@ -11,17 +11,17 @@ public class AuthorRepository(IRepository repository) : IAuthorRepository, IDisp
 
     public Task DeleteAsync(Author author)
     {
-        throw new NotImplementedException();
+        return _repository.DeleteAsync(author);
     }
 
     public IQueryable<Author> GetAllAsync()
     {
-        throw new NotImplementedException();
+        return _repository.GetAllAsync<Author>();
     }
 
-    public Task<Author> UpdateAsync(Author author)
+    public Task<Author> SaveAsync(Author author)
     {
-        throw new NotImplementedException();
+        return _repository.SaveAsync(author);
     }
 
     public void Dispose()

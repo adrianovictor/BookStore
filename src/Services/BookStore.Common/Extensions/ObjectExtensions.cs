@@ -54,5 +54,12 @@ public static class ObjectExtensions
 
         return (ExpandoObject)expando;
     }
+
+    public static bool IsNull(this object obj) => obj == null;
+
+    public static bool IsNotNull(this object obj) => obj != null;
+
+    public static bool IsNotNullOrEmpty(this object obj) =>
+        obj.IsNotNull() && obj.ToString().IsNotEmpty();    
 }
 

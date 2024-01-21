@@ -11,19 +11,19 @@ public class BookRepository(IRepository repository) : IBookRepository, IDisposab
 
     public Task DeleteAsync(Book book)
     {
-        throw new NotImplementedException();
+        return _repository.DeleteAsync(book);
     }
 
     public IQueryable<Book> GetAllAsync()
     {
-        throw new NotImplementedException();
-    }
-
-    public Task<Book> UpdateAsync(Book book)
-    {
-        throw new NotImplementedException();
+        return _repository.GetAllAsync<Book>();
     }
     
+    public Task<Book> SaveAsync(Book book)
+    {
+        return _repository.SaveAsync(book);
+    }
+
     public void Dispose()
     {
         Dispose(true);
